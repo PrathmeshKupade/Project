@@ -1,40 +1,64 @@
+/* Boilerplate for CSS */
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* CSS Variables */
+:root{
+    --c-dark: #484A58;
+    --c-light: #C4C4C4;
+    --c-brand: #7C8095;
+}
+
+
+/* Global CSS */
 body{
-    background:white
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--c-dark);
+    color: var(--c-light);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Navigation bar */
 
-header{
-   background-color: rgba(0, 0, 0, 0.945);
-   height: 4rem;
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--c-dark); 
+    color: var(--c-light); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
 }
 
- nav div{
-    display: inline;
-    color: beige;
-    
+.navbar .logo {
+    color: var(--c-light);
+    font-size: 24px;
+    font-weight: 600;
 }
 
-ul{
-   display: flex;
-   list-style: none;
-   justify-content: right;
-   text-align: center;
+.navbar .logo :hover {
+    color: var(--c-brand);
+}
+
+.navbar .navLinks ul{
+    width: 300px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
 
 }
 
-ul li a{
-    text-decoration: none;
-    padding: 1rem;
-    color: beige;
-}
-
-/* Introduction section*/
+/* Hero section*/
 
 .introduction{
     height: 610px;
